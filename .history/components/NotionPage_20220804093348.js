@@ -143,7 +143,7 @@ function addWatch4Dom(element) {
 }
 
 /**
- * 复制代码后，会重复 @see https://github.com/Azure-Vision/NotionNext/issues/165
+ * 复制代码后，会重复 @see https://github.com/tangly1024/NotionNext/issues/165
  * @param {*} e
  */
 function fixCopy(codeCopy) {
