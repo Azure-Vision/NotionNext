@@ -82,7 +82,7 @@ const LayoutBase = props => {
           <div className="w-full max-w-4xl">
             {onLoading ? <LoadingCover /> : children}
           </div>
-          {is_home? <SideRight {...props} slot={rightAreaSlot} />: <div></div>}
+          rel_url == ""? <SideRight {...props} slot={rightAreaSlot} />
         </div>
       </main>
 

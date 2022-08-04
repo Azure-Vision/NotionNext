@@ -26,7 +26,7 @@ function GetUrlRelativePath()
   }
   return relUrl;
 }
-const is_home = GetUrlRelativePath() == "";
+
 
 /**
  * 基础布局 采用左右两侧布局，移动端使用顶部导航栏
@@ -82,7 +82,7 @@ const LayoutBase = props => {
           <div className="w-full max-w-4xl">
             {onLoading ? <LoadingCover /> : children}
           </div>
-          {is_home? <SideRight {...props} slot={rightAreaSlot} />: <div></div>}
+          {/* <SideRight {...props} slot={rightAreaSlot} /> */}
         </div>
       </main>
 
