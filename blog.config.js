@@ -1,9 +1,9 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.azure-vision.vercel.app/zh/features/personality
 const BLOG = {
   AUTHOR: 'Vision', // 作者
-  BIO: '一个普通的干饭人🍚', // 作者简介
+  BIO: 'Why does Vision study computer science? Because Computer Vision😆', // 作者简介
   LINK: 'https://azure-vision.vercel.app', // 网站地址
-  KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
+  KEYWORDS: 'Vision, Notion, 博客', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
   process.env.NOTION_PAGE_ID || 'fe16f59530f9485b80fa7ef740184ea4', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
