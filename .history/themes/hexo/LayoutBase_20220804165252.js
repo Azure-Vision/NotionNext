@@ -52,7 +52,11 @@ const LayoutBase = props => {
     document.addEventListener('scroll', scrollListener)
     return () => document.removeEventListener('scroll', scrollListener)
   }, [show])
-
+  if (typeof window !== "undefined") {
+    var is_home = window.location.pathname == "";
+  } else {
+    var is_home = false;
+  }
   const router = useRouter()
   return (
     <div className="bg-hexo-background-gray dark:bg-black">
@@ -70,7 +74,7 @@ const LayoutBase = props => {
           <div className="w-full max-w-4xl">
             {onLoading ? <LoadingCover /> : children}
           </div>
-          {(router.pathname === '/' || router.pathname === '')? <SideRight {...props} slot={rightAreaSlot} />: <div></div>}
+          {router.pathname === '/'? <SideRight {...props} slot={rightAreaSlot} />: <div></div>}
         </div>
       </main>
 

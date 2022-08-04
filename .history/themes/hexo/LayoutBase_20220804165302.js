@@ -70,7 +70,7 @@ const LayoutBase = props => {
           <div className="w-full max-w-4xl">
             {onLoading ? <LoadingCover /> : children}
           </div>
-          {(router.pathname === '/' || router.pathname === '')? <SideRight {...props} slot={rightAreaSlot} />: <div></div>}
+          {router.pathname === '/'? <SideRight {...props} slot={rightAreaSlot} />: <div></div>}
         </div>
       </main>
 
