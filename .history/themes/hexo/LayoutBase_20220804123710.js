@@ -13,7 +13,6 @@ import { useGlobal } from '@/lib/global'
 import BLOG from '@/blog.config'
 import FacebookPage from '@/components/FacebookPage'
 
-
 /**
  * 基础布局 采用左右两侧布局，移动端使用顶部导航栏
  * @param props
@@ -51,7 +50,7 @@ const LayoutBase = props => {
     document.addEventListener('scroll', scrollListener)
     return () => document.removeEventListener('scroll', scrollListener)
   }, [show])
-  const is_home = window.location.pathname == "";
+  const is_home = GetUrlRelativePath() == "";
   return (
     <div className="bg-hexo-background-gray dark:bg-black">
       <CommonHead meta={meta} siteInfo={siteInfo}/>
@@ -68,7 +67,7 @@ const LayoutBase = props => {
           <div className="w-full max-w-4xl">
             {onLoading ? <LoadingCover /> : children}
           </div>
-          {is_home? <SideRight {...props} slot={rightAreaSlot} />: <div></div>}
+          {/* <SideRight {...props} slot={rightAreaSlot} /> */}
         </div>
       </main>
 
