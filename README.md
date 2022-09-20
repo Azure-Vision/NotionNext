@@ -102,9 +102,3 @@ yarn run start # 本地启动NextJS服务
 <table>
   <tr align="left">
   <td align="center"><a href="https://github.com/Azure-Vision"><img src="https://avatars.githubusercontent.com/u/15920488" width="64px;"alt="tangly1024"/><br/><sub><b>tangly1024</b></sub></a><br/><a href="https://github.com/Azure-Vision/NotionNext/commits?author=tangly1024" title="Owner" >🎫 🔧 🎨 🐛</a></td>
-
-十分期待你的[贡献](/CONTRIBUTING.md)，一起来完善这个项目~
-
-## License
-
-The MIT License.
