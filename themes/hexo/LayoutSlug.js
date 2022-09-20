@@ -52,7 +52,7 @@ export const LayoutSlug = props => {
       showTag={false}
       floatSlot={floatSlot}
     >
-      <div className="w-full lg:shadow-sm lg:hover:shadow lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray dark:border-black">
+      <div className="w-full lg:rounded-xl dark:bg-hexo-black-gray dark:border-black"> {/* lg:px-2 lg:py-4  bg-white lg:border lg:shadow-sm lg:hover:shadow */}
         {lock && <ArticleLock password={post.password} validPassword={validPassword} />}
 
         {!lock && <div id="container" className="overflow-x-auto flex-grow mx-auto md:w-full md:px-5 ">

@@ -19,7 +19,7 @@
 
 演示地址：[https://preview.azure-vision.vercel.app/](https://preview.azure-vision.vercel.app/)
 
-## 继承自Nobelium的亮点 ✨ 
+## 继承自Nobelium的亮点 ✨
 
 **🚀 &nbsp;秒开，设备全适配**
 
@@ -39,20 +39,20 @@
 - 服务端渲染、优秀的SEO
 
 **🎨 &nbsp;美观，轻松自定义**
+
 - 丰富的配置项，更支持多语言
 - 使用 Tailwind CSS，轻松实现二次开发
 
 ## 特色
+
 - 支持更多的页面，功能，更多特性、欢迎移步[我的博客](https://azure-vision.vercel.app/article/notion-next)查看
 - 支持多主题切换
 
-| Next | Medium | Hexo | Fukasawa |
-|--|--|--|--|
-| <img src='./docs/theme-next.png' width='300'/> [预览NEXT](https://preview.azure-vision.vercel.app/?theme=next)  | <img src='./docs/theme-medium.png' width='300'/> [预览MEDIUM](https://preview.azure-vision.vercel.app/?theme=medium) | <img src='./docs/theme-hexo.png' width='300'/> [预览HEXO](https://preview.azure-vision.vercel.app/?theme=hexo) | <img src='./docs/theme-fukasawa.png' width='300'/> [预览FUKASAWA](https://preview.azure-vision.vercel.app/?theme=fukasawa) |
+| Next                                                                                                            | Medium                                                                                                                | Hexo                                                                                                            | Fukasawa                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `<img src='./docs/theme-next.png' width='300'/>` [预览NEXT](https://preview.azure-vision.vercel.app/?theme=next) | `<img src='./docs/theme-medium.png' width='300'/>` [预览MEDIUM](https://preview.azure-vision.vercel.app/?theme=medium) | `<img src='./docs/theme-hexo.png' width='300'/>` [预览HEXO](https://preview.azure-vision.vercel.app/?theme=hexo) | `<img src='./docs/theme-fukasawa.png' width='300'/>` [预览FUKASAWA](https://preview.azure-vision.vercel.app/?theme=fukasawa) |
 
-*只需修改`blog.config.js`文件的`THEME`即可实现主题切换。* 没找到喜欢的主题？[贡献](/CONTRIBUTING.md)一个吧~
-
-
+*只需修改 `blog.config.js`文件的 `THEME`即可实现主题切换。* 没找到喜欢的主题？[贡献](/CONTRIBUTING.md)一个吧~
 
 ## 快速起步
 
@@ -67,7 +67,9 @@
 更多项目特性及配置的说明，请移步 [NotionNext文档](https://docs.azure-vision.vercel.app/zh) 查看，文档正在完善中,欢迎 [参与编辑](https://github.com/Azure-Vision/nextjs-docs-notion-next)
 
 ## 快速开发
+
 - 需要安装Nodejs环境
+
 ```bash
 yarn # 安装依赖
 yarn run dev # 本地开发
@@ -84,11 +86,13 @@ yarn run start # 本地启动NextJS服务
 - **图标**：[fontawesome v5.15](https://fontawesome.com/v5.15/icons?d=gallery)
 
 ## 更新日志
+
 请移步 [更新文档](https://docs.azure-vision.vercel.app/zh/changelog)查看
 
-
 ## 致谢
+
 感谢Craig Hart发起的Nobelium项目
+
 <table><tr align="left">
   <td align="center"><a href="https://github.com/craigary" title="Craig Hart"><img src="https://avatars.githubusercontent.com/u/10571717" width="64px;"alt="Craig Hart"/></a><br/><a href="https://github.com/craigary" title="Craig Hart">Craig Hart</a></td>
 </tr></table>
@@ -97,21 +101,9 @@ yarn run start # 本地启动NextJS服务
 
 <table>
   <tr align="left">
-  <td align="center"><a href="https://github.com/Azure-Vision"><img src="https://avatars.githubusercontent.com/u/15920488" width="64px;"alt="tangly1024"/><br/><sub><b>tangly1024</b></sub></a><br/><a href="https://github.com/Azure-Vision/NotionNext/commits?author=tangly1024" title="Owner" >🎫 🔧 🎨 🐛</a></td> 
-    
-  <td align="center"><a href="https://github.com/uWayLu"><img src="https://avatars.githubusercontent.com/u/21689326" width="64px;" alt="uWayLu"/><br/><sub><b>uWayLu</b></sub></a><br/><a href="https://github.com/Azure-Vision/NotionNext/commits?author=uWayLu" title="uWayLu" >🔧 🐛</a></td>
-    
-  <td align="center"><a href="https://github.com/txs"><img src="https://avatars.githubusercontent.com/u/554329" width="64px;" alt="txs"/><br/><sub><b>txs</b></sub></a><br/><a href="https://github.com/Azure-Vision/NotionNext/commits?author=txs" title="txs" >🔧 🐛</a></td>  
-
-  <td align="center"><a href="https://github.com/yuzhanglong"><img src="https://avatars.githubusercontent.com/u/56540811" width="64px;" alt="txs"/><br/><sub><b>yuzhanglong</b></sub></a><br/><a href="https://github.com/Azure-Vision/NotionNext/commits?author=yuzhanglong" title="yuzhanglong" >🔧 🐛</a></td> 
-    
-  <td align="center"><a href="https://github.com/Hscpro"><img src="https://avatars.githubusercontent.com/u/13926044" width="64px;" alt="Hscpro"/><br/><sub><b>Hscpro</b></sub></a><br/><a href="https://github.com/Azure-Vision/NotionNext/commits?author=Hscpro" title="Hscpro" >🔧 🐛</a></td> 
-    
-</tr>
-</table>
+  <td align="center"><a href="https://github.com/Azure-Vision"><img src="https://avatars.githubusercontent.com/u/15920488" width="64px;"alt="tangly1024"/><br/><sub><b>tangly1024</b></sub></a><br/><a href="https://github.com/Azure-Vision/NotionNext/commits?author=tangly1024" title="Owner" >🎫 🔧 🎨 🐛</a></td>
 
 十分期待你的[贡献](/CONTRIBUTING.md)，一起来完善这个项目~
-
 
 ## License
 
