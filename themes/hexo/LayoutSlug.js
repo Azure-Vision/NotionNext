@@ -75,17 +75,20 @@ export const LayoutSlug = props => {
                 data-ad-slot="3806269138" />
             </section>
 
-            <ArticleCopyright {...props} />
-            <ArticleRecommend {...props} />
-            <ArticleAdjacent {...props} />
+            {(router.pathname.startsWith("/article") || router.pathname.startsWith("article"))?
+            <div>
+              <ArticleCopyright {...props} />
+              <ArticleRecommend {...props} />
+              <ArticleAdjacent {...props} />
+              
+            </div> : <div></div>}
           </article>
 
           <hr className='border-dashed' />
-
-          {/* 评论互动 */}
-          <div className="duration-200 overflow-x-auto bg-white dark:bg-hexo-black-gray px-3">
-            <Comment frontMatter={post} />
-          </div>
+          {(router.pathname.startsWith("/article") || router.pathname.startsWith("article") || router.pathname.startsWith("/message"))? // 评论互动
+            <div className="duration-200 overflow-x-auto bg-white dark:bg-hexo-black-gray px-3">
+              <Comment frontMatter={post} />
+            </div>: <div></div>}
         </div>}
       </div>
 
