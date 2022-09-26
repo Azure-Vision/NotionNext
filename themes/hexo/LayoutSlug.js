@@ -15,7 +15,7 @@ import { useRouter } from 'next/router'
 import { isBrowser } from '@/lib/utils'
 
 export const LayoutSlug = props => {
-  const { post, lock, validPassword, meta } = props
+  const { post, lock, validPassword } = props
 
   if (!post) {
     return <LayoutBase
