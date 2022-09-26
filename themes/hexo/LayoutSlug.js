@@ -11,10 +11,11 @@ import NotionPage from '@/components/NotionPage'
 import ArticleAdjacent from './components/ArticleAdjacent'
 import ArticleCopyright from './components/ArticleCopyright'
 import ArticleRecommend from './components/ArticleRecommend'
+import { useRouter } from 'next/router'
 import { isBrowser } from '@/lib/utils'
 
 export const LayoutSlug = props => {
-  const { post, lock, validPassword } = props
+  const { post, lock, validPassword, meta } = props
 
   if (!post) {
     return <LayoutBase
@@ -43,10 +44,10 @@ export const LayoutSlug = props => {
     </div>}
     <JumpToCommentButton />
   </>
-
+  const router = useRouter()
   return (
     <LayoutBase
-      // headerSlot={<HeaderArticle {...props} />}
+      headerSlot={(router.pathname.startsWith("/article") || router.pathname.startsWith("article"))? <HeaderArticle {...props} />: <div></div>}
       {...props}
       showCategory={false}
       showTag={false}
