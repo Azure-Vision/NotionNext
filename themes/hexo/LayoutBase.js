@@ -54,8 +54,8 @@ const LayoutBase = props => {
   }, [show])
 
   const router = useRouter()
-  let isHome = router.pathname === '/' || router.pathname === '';
-  if (isHome) {
+  let needSpace = router.pathname === '/' || router.pathname === '' || router.pathname === '/search' || router.pathname === 'search';
+  if (needSpace) {
     var customClassName = "w-full mx-auto lg:flex justify-center pt-14 ";
   } else {
     var customClassName = "w-full mx-auto lg:flex justify-center pt+14";

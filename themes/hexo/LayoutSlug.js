@@ -84,10 +84,13 @@ export const LayoutSlug = props => {
             </div> : <div></div>}
           </article>
 
-          <hr className='border-dashed' />
-          {(router.pathname.startsWith("/article") || router.pathname.startsWith("article") || router.pathname.startsWith("/message"))? // 评论互动
-            <div className="duration-200 overflow-x-auto bg-white dark:bg-hexo-black-gray px-3">
+          
+          {(router.pathname.startsWith("/article") || router.pathname.startsWith("article") || router.pathname.startsWith("message") || router.pathname.startsWith("/message"))? // 评论互动
+            <div> 
+              <hr className='border-dashed' />
+              <div className="duration-200 overflow-x-auto bg-white dark:bg-hexo-black-gray px-3">
               <Comment frontMatter={post} />
+              </div>
             </div>: <div></div>}
         </div>}
       </div>
