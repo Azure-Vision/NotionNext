@@ -47,7 +47,7 @@ export const LayoutSlug = props => {
   const router = useRouter()
   return (
     <LayoutBase
-      headerSlot={(router.pathname.startsWith("/article") || router.pathname.startsWith("article"))? <HeaderArticle {...props} />: <div></div>}
+      headerSlot={(router.pathname.startsWith("/article") || router.pathname.startsWith("article") || router.pathname.startsWith("/") || router.pathname.startsWith(""))? <HeaderArticle {...props} />: <div></div>}
       {...props}
       showCategory={false}
       showTag={false}
@@ -85,7 +85,7 @@ export const LayoutSlug = props => {
           </article>
 
           
-          {(router.pathname.startsWith("/article") || router.pathname.startsWith("article") || router.pathname.startsWith("message") || router.pathname.startsWith("/message"))? // 评论互动
+          {(router.pathname.startsWith("/article") || router.pathname.startsWith("article") || router.pathname.startsWith("contact") || router.pathname.startsWith("/contact"))? // 评论互动
             <div> 
               <hr className='border-dashed' />
               <div className="duration-200 overflow-x-auto bg-white dark:bg-hexo-black-gray px-3">
