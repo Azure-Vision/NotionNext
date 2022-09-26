@@ -54,6 +54,13 @@ const LayoutBase = props => {
   }, [show])
 
   const router = useRouter()
+  let isHome = router.pathname === '/' || router.pathname === '';
+  if (isHome) {
+    var customClassName = "w-full mx-auto lg:flex justify-center pt-14 ";
+  } else {
+    var customClassName = "w-full mx-auto lg:flex justify-center pt+14";
+  }
+
   return (
     <div className="bg-hexo-background-gray dark:bg-black">
       <CommonHead meta={meta} siteInfo={siteInfo}/>
@@ -65,7 +72,7 @@ const LayoutBase = props => {
       <main id="wrapper" className="py-8 w-full min-h-screen"> {/*  md:px-8 TODO:*/} 
         <div
           id="container-inner"
-          className="w-full mx-auto lg:flex justify-center pt-14 " //  lg:space-x-4 
+          className= {customClassName} //  lg:space-x-4 
         >
           <div className="w-full">  {/*  max-w-4xl */}
             {onLoading ? <LoadingCover /> : children}
