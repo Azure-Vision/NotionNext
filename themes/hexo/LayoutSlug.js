@@ -47,7 +47,7 @@ export const LayoutSlug = props => {
   const router = useRouter()
   return (
     <LayoutBase
-      headerSlot={(router.pathname.startsWith("/article") || router.pathname.startsWith("article") || router.pathname.startsWith("/") || router.pathname.startsWith(""))? <HeaderArticle {...props} />: <div></div>}
+      headerSlot={(router.pathname.startsWith("/article") || router.pathname.startsWith("article") || router.pathname === "/" || router.pathname === "")? <HeaderArticle {...props} />: <div></div>}
       {...props}
       showCategory={false}
       showTag={false}
